@@ -10,7 +10,7 @@ int findMin(){
         }
     }
     list.data[index]=list.data[list.length-1];
-    if(index!=list.length-1)list.length--;
+    list.length--;
     return minNum;
 }
 int main(){
