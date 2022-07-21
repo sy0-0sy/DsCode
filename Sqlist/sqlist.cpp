@@ -11,6 +11,7 @@ void Print(){
     for(int i=0;i<list.length;i++)cout<<list.data[i]<<" ";
     cout<<endl; 
 }
+//自己编写测试数据
 void initTest(){
     for(int i=0;i<5;i++)list.data[i]=i;
     for(int i=5;i<10;i++)list.data[i]=i;
