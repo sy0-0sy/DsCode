@@ -62,9 +62,10 @@ void insertToNoneHeadList(LinkList&head,int x){
 int delNoneHead(LinkList&p,LinkList&head){
     //删除p的下一个节点,规定如果传入NULL则是代表删除头指针(head没有前驱)
     if(!p){
-        int x=head->data;
-        free(head);
-        head=NULL;
+        LNode*tmp=head;
+        int x=tmp->data;
+        head=head->next;
+        free(tmp);
         return x;
     }
     else{

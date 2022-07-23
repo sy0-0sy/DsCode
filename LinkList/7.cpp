@@ -19,8 +19,8 @@ int delMin(LinkList&head){
 int main(){
     LinkList head=initNoneHeadList();
     insertToNoneHeadList(head,5);
-    insertToNoneHeadList(head,1);
     insertToNoneHeadList(head,2);
+    insertToNoneHeadList(head,1);
     cout<<"before: ";
     Print2(head);
     cout<<"删除的最小元素为: "<<delMin(head)<<endl;
